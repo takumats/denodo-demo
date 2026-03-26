@@ -53,5 +53,5 @@ SELECT
     floor(random() * 30 + 1)::int,
     floor(random() * 5 + 1)::int,
     floor(random() * 2000000 + 300000)::decimal, -- 30万〜230万
-    CAST('2025-01-01' AS DATE) + (random() * 364)::int
+    CAST('2025-04-01' AS DATE) + (random() * 364)::int
 FROM generate_series(1, 1000);
